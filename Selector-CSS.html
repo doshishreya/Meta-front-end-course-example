@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Example</title>
+    <style>
+        /*  Universal Selector */
+        * {
+            font-family: Arial, sans-serif;
+        }
+
+        /*  Element Selector */
+        h1 {
+            color: blue;
+        }
+
+        /* 3 Class Selector */
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+
+        /*  ID Selector */
+        #unique {
+            color: red;
+            font-size: 20px;
+        }
+
+        /*  Grouping Selector */
+        h2, p {
+            text-align: center;
+        }
+
+        /*  Descendant Selector */
+        div p {
+            color: green;
+        }
+
+        /* Child Selector */
+        div > span {
+            color: orange;
+            font-weight: bold;
+        }
+
+        /*  Adjacent Sibling Selector */
+        h2 + p {
+            color: purple;
+            font-style: italic;
+        }
+
+        /*  General Sibling Selector */
+        h3 ~ p {
+            color: brown;
+        }
+
+        /*  Attribute Selector */
+        input[type="text"] {
+            border: 2px solid blue;
+        }
+
+        /*  Hover Pseudo-Class */
+        button:hover {
+            background-color: lightblue;
+            color: black;
+            cursor: pointer;
+        }
+
+        p:hover {
+            background-color: lightgray;
+            color: darkblue;
+        }
+
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Element Selector</h1>
+
+    <p class="highlight">This is a class selector example.</p>
+
+    <p id="unique">This is an ID selector example.</p>
+
+    <h2>Grouping Selector</h2>
+    <p>Paragraph inside grouping selector.</p>
+
+    <div>
+        <p>Descendant Selector: This is inside a div.</p>
+        <span>Child Selector: This is a direct child of div.</span>
+    </div>
+
+    <h3>Adjacent & General Sibling Selectors</h3>
+    <p>This is the first sibling paragraph.</p>
+    <p>This is another sibling paragraph.</p>
+
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+    </form>
+
+    <button>Hover over me!</button>
+
+    <p>Hover over this paragraph!</p>
+
+    <a href="#">Hover over this link!</a>
+
+</body>
+</html>
