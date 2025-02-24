@@ -1,0 +1,53 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+/* Hover Box Styling */
+.hover-box {
+    width: 200px;
+    height: 200px;
+    background-color: #ff6347;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.hover-box:hover {
+    background-color: #32cd32; /* Change color on hover */
+    transform: scale(1.1); /* Slightly scale the box */
+}
